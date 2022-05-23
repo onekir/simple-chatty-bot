@@ -1,16 +1,19 @@
 const input = require('sync-input');
 
+// greeting by bot
 function greet(bot_name, birth_year) {
 	console.log("Hello! My name is " + bot_name + ".");
 	console.log("I was created in " + birth_year + ".");
 }
 
+// ask user for a name
 function remind_name() {
 	console.log("Please, remind me your name.");
 	let name = input();
 	console.log("What a great name you have, " + name + "!");
 }
 
+// guessing an age of a user
 function guess_age() {
 	console.log("Let me guess your age.");
 	console.log("Enter remainders of dividing your age by 3, 5 and 7.");
@@ -24,6 +27,7 @@ function guess_age() {
 	console.log("Your age is " + age + "; that's a good time to start programming!");
 }
 
+// counting numbers from 0 to entered number
 function count() {
 	console.log("Now I will prove to you that I can count to any number you want.");
 
@@ -36,6 +40,7 @@ function count() {
 	}
 }
 
+// test for a user
 function test() {
 	const testQuestions =[
 		"Why do we use methods?",
@@ -66,6 +71,7 @@ function test() {
 	console.log("Completed, have a nice day!");
 }
 
+// goodbye
 function end() {
 	console.log("Congratulations, have a nice day!");
 }
